@@ -13,6 +13,36 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .bgvid {
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.bgvid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.bgvid:before {
+  position: absolute;
+  z-index: -1;
+  top: -200px;
+  right: -200px;
+  bottom: -200px;
+  left: -200px;
+  border: 2px solid black;
+  border-color: transparent;
+  background: inherit;
+  background-clip: border-box;
+  content: "";
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +56,164 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.modal-title {
+  font-family: "Wildside";
+  font-size: 50px;
+  margin: 30px;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-header {
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-footer {
+  justify-content: flex-end;
+}
+
+.modal-close {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.modal-body {
+  overflow: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 550px;
+  background: rgb(93, 23, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 23, 107, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 10px;
+  position: relative;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+}
+
+.modal-content {
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  display: flex;
+  padding: 1rem;
+}
+
+.pricepernft {
+  width: 100px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  font-family: Wildside;
+}
+.price {
+  width: 300px;
+  border: 1px solid rgba(200, 200, 200, 0.7);
+  display: flex;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 7px;
+}
+
+.mintbutton {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+.mintbutton:hover {
+  -ms-transform-origin-x: 5px;
+}
+
+.flashingotters {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.mintdiv {
+  width: 300px;
+  display: flex;
+  background: rgba(200, 200, 200, 0.5);
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 7px;
+}
+
+.mintdiv input {
+  width: 100px;
+  display: flex;
+  background: rgba(200, 200, 200, 0.5);
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 7px;
+}
+
+.mintdiv button {
+  margin-top: 0px;
+}
+
+.minthome_mint_button {
+  height: 20px;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,159 @@
+#providers {
+  margin: 0;
+  padding: 0;
+}
+
+#providers li {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 200px;
+}
+
+.minthomeBg {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
+  background-image: url("../images/MINT-PAGE-ART.png");
+  pointer-events: none;
+}
+
+.minthome__container {
+  background-color: rgba(52, 59, 65, 0.8);
+  position: absolute;
+  right: 4vw;
+  top: 26vh;
+  width: 670px;
+  height: 50vh;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3d48c;
+}
+
+.minthome__info {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.minthome__info p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.minthome__signIn button {
+  cursor: pointer;
+  padding: 10px 20px;
+  height: 70px;
+  width: 400px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: #f3d48c;
+  font-style: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: all 0.35s;
+  color: #956343;
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+.minthome__signIn-false button {
+  cursor: default;
+  padding: 10px 20px;
+  height: 70px;
+  width: 400px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: rgba(243, 212, 140, 0.5);
+  font-style: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: all 0.35s;
+  color: #956343;
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+.minthome__signIn button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.minthome__signIn-input input {
+  width: 40%;
+  background-color: #f3d48c;
+  color: #956343;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  outline-width: 0;
+  border: 0px solid;
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+.minthome__signIn-input-false input {
+  cursor: default;
+  width: 40%;
+  background-color: rgba(243, 212, 140, 0.5);
+  color: #956343;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  outline-width: 0;
+  border: 0px solid;
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  background-color: #000;
+  color: #956343;
+  opacity: 1;
+}
+
+.minthome__mint button {
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .bgvid {
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
